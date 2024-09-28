@@ -13,12 +13,14 @@ export interface BasicLoginLayoutProps {
   title: string;
   children?: React.ReactNode;
   isLemurVisible?: boolean;
+  lemurPlacement?: "top-right" | "bottom-left";
 }
 
 const BasicLoginLayout = ({
   title,
   children,
   isLemurVisible = true,
+  lemurPlacement = "top-right",
 }: BasicLoginLayoutProps) => {
   return (
     <Box className="BasicLoginLayout">
@@ -48,9 +50,17 @@ const BasicLoginLayout = ({
             alt="lemur"
             style={{
               position: "absolute",
-              top: `0%`,
-              right: "0%",
-              transform: "translate(20px,-118px)",
+
+              ...(lemurPlacement === "top-right" && {
+                top: `0%`,
+                right: "0%",
+                transform: "translate(20px,-118px)",
+              }),
+              ...(lemurPlacement === "bottom-left" && {
+                bottom: `0%`,
+                left: "0%",
+                transform: "translateX(-100px)",
+              }),
             }}
             width={100}
             height={128}

@@ -1,55 +1,68 @@
 import { useTranslation } from "react-i18next";
 import { Formik, Form } from "formik";
-// import "./Register.styles.css";
 
 import BasicLoginLayout from "../layouts/BasicLoginLayout";
 import { useLocalizedYup } from "../common/yup/useLocalizedYup";
-import { removeTokens } from "../common/auth/tokens";
 import TextFieldFormik from "../components/formik/TextFieldFormik";
 import Box from "@mui/material/Box";
-import CheckboxFormik from "../components/formik/CheckboxFormik";
 
 import LowerFormLink from "../components/LowerFormLink";
 import { PATHS_CORE } from "../common/constants/paths";
 import Button from "../components/Button";
 import { Typography } from "@mui/material";
+import AutocompleteSyncFormik from "../components/formik/AutocompleteSyncFormik";
+import { useMemo } from "react";
 
-interface LoginFormValues {
+interface FormValues {
   name: string;
   email: string;
   password: string;
-  repeatPassword: string;
-  rememberMe?: boolean;
+  role: string;
 }
 
-const initialValues: LoginFormValues = {
+const initialValues: FormValues = {
   name: "",
   email: "",
   password: "",
-  repeatPassword: "",
-  rememberMe: true,
+  role: "",
 };
 
-const handleRememberMe = () => {
-  removeTokens();
-};
+interface UserStatusValue {
+  id: string;
+  label: string;
+  code: string;
+}
 
 const Register = () => {
   const { t } = useTranslation();
   const yup = useLocalizedYup();
 
   const validationSchema = yup.object({
+    name: yup.string().required(),
     email: yup.string().email().required(),
     password: yup.string().required(),
-    rememberMe: yup.boolean(),
+    role: yup.string().required().oneOf(["student", "teacher"]),
   });
 
-  const handleSubmit = async (values: LoginFormValues) => {
-    if (!values.rememberMe) {
-      // if you login and rememberMe is false, then add listener that will remove tokens from LocalStorage when user closes the tab or the whole browser
-      window.addEventListener("unload", handleRememberMe);
-    }
+  const userStatusValues = useMemo(() => {
+    const values: UserStatusValue[] = [
+      {
+        id: "student",
+        label: t("form.student"),
+        code: "student",
+      },
+      {
+        id: "teacher",
+        label: t("form.teacher"),
+        code: "teacher",
+      },
+    ];
 
+    return values;
+  }, [t]);
+
+  const handleSubmit = async (values: FormValues) => {
+    console.log({ values });
     try {
       const makeFakeLogin = () =>
         new Promise((res) => {
@@ -72,7 +85,7 @@ const Register = () => {
   };
 
   return (
-    <BasicLoginLayout title={t("signup")}>
+    <BasicLoginLayout title={t("signup")} lemurPlacement="bottom-left">
       <Formik
         initialValues={initialValues}
         onSubmit={handleSubmit}
@@ -81,12 +94,21 @@ const Register = () => {
         {({ isSubmitting }) => (
           <Form>
             <TextFieldFormik
-              name="email"
+              name="name"
               type="text"
-              id="email"
-              label={t("form.emailInputLabel")}
+              id="name"
+              label={t("form.name")}
               fullWidth
             />
+            <Box pt={2}>
+              <TextFieldFormik
+                name="email"
+                type="text"
+                id="email"
+                label={t("form.emailInputLabel")}
+                fullWidth
+              />
+            </Box>
             <Box pt={2}>
               <TextFieldFormik
                 name="password"
@@ -96,22 +118,12 @@ const Register = () => {
                 fullWidth
               />
             </Box>
-
-            <Box
-              pt={2}
-              display="flex"
-              justifyContent="space-between"
-              alignItems={"center"}
-            >
-              <CheckboxFormik
-                name="rememberMe"
-                id="rememberMe"
-                label={t("form.rememberMe")}
-              />
-
-              <LowerFormLink
-                to={PATHS_CORE.PASSWORD_FORGOT}
-                label={t("form.forgotPassword")}
+            <Box pt={2}>
+              <AutocompleteSyncFormik
+                inputLabel={t("form.status")}
+                name="role"
+                options={userStatusValues}
+                fullWidth
               />
             </Box>
 
@@ -135,9 +147,15 @@ const Register = () => {
         )}
       </Formik>
 
-      <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        mt={2}
+      >
         <Typography>{t("alreadyHaveAnAccount")}</Typography>
-        <LowerFormLink to={PATHS_CORE.REGISTER} label={t("login")} />
+        <LowerFormLink to={PATHS_CORE.HOMEPAGE} label={t("login")} />
       </Box>
     </BasicLoginLayout>
   );
