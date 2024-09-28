@@ -19,7 +19,7 @@ const theme = createTheme({
     // error: {},
     text: {
       primary: "rgb(235,235,235)",
-      // secondary: string;
+      secondary: "rgba(235,235,235,0.6)",
       // disabled: string;
     },
   },

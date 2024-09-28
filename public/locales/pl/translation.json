@@ -1,8 +1,22 @@
 {
   "welcome": "Dzień dobry night city",
   "onlyTranslationFile": "ten tekst jets tylko w translation.json",
+  "youDontHaveAccount": "Nie masz jezscze konta?",
+  "alreadyHaveAnAccount": "Masz już konto?",
   "notifications": {
     "sessionEnd": "Koniec sesji. Zaloguj się ponownie"
   },
-  "login": "Zaloguj się"
+  "login": "Zaloguj się",
+  "signup": "Zarejestruj się",
+  "form": {
+    "emailInputLabel": "E-mail",
+    "passwordInputLabel": "Hasło",
+    "rememberMe": "Zapamiętaj mnie",
+    "forgotPassword": "Przypomnij hasło",
+    "wrongEmailMsg": "Niepoprawny email",
+    "requiredFieldInputMsg": "Wymagane pole"
+  },
+  "buttons": {
+    "login": "Zaloguj"
+  }
 }
