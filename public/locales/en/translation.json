@@ -14,7 +14,11 @@
     "rememberMe": "Remember me",
     "forgotPassword": "Forgot password",
     "wrongEmailMsg": "Incorrect email format",
-    "requiredFieldInputMsg": "Required field"
+    "requiredFieldInputMsg": "Required field",
+    "status": "I'm a...",
+    "student": "Student",
+    "teacher": "Teacher",
+    "name": "Name"
   },
   "buttons": {
     "login": "Login"

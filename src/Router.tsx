@@ -11,7 +11,7 @@ import Page2 from "./features/page2";
 import NotFound from "./features/NotFound";
 
 import Page3 from "./features/Page3";
-import Register from "./features/register";
+import Register from "./features/Register";
 
 const Router = () => {
   useTokenListener();

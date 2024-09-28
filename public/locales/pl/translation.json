@@ -14,7 +14,11 @@
     "rememberMe": "Zapamiętaj mnie",
     "forgotPassword": "Przypomnij hasło",
     "wrongEmailMsg": "Niepoprawny email",
-    "requiredFieldInputMsg": "Wymagane pole"
+    "requiredFieldInputMsg": "Wymagane pole",
+    "status": "Jestem...",
+    "student": "Studentem",
+    "teacher": "Nauczycielem",
+    "name": "Imię"
   },
   "buttons": {
     "login": "Zaloguj"
