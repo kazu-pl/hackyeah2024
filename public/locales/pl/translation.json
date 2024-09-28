@@ -1,0 +1,8 @@
+{
+  "welcome": "Dzień dobry night city",
+  "onlyTranslationFile": "ten tekst jets tylko w translation.json",
+  "notifications": {
+    "sessionEnd": "Koniec sesji. Zaloguj się ponownie"
+  },
+  "login": "Zaloguj się"
+}

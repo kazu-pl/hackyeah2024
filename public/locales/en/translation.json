@@ -1,0 +1,8 @@
+{
+  "welcome": "Good morning Night City",
+  "onlyTranslationFile": "This text exists only in translation.json",
+  "notifications": {
+    "sessionEnd": "session ended"
+  },
+  "login": "Login"
+}

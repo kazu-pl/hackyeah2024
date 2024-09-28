@@ -1,0 +1,8 @@
+.Homepage__wrapper {
+  min-height: 100vh;
+  background-image: url(../assets/img/tlo-main.png);
+  background-size: cover;
+  background-position: bottom;
+
+  display: flex;
+}
