@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import "./BasicLoginLayout.styles.css";
 import { IconButton, Typography } from "@mui/material";
-import { useTranslation } from "react-i18next";
+
 import i18n from "../../i18n";
 
 import PlFlag from "../../assets/Flag_of_Poland.svg";
@@ -10,16 +10,16 @@ import GbFlag from "../../assets/Flag_of_the_United_Kingdom.svg";
 import LemurImg from "../../assets/img/lemur.png";
 
 export interface BasicLoginLayoutProps {
+  title: string;
   children?: React.ReactNode;
   isLemurVisible?: boolean;
 }
 
 const BasicLoginLayout = ({
+  title,
   children,
   isLemurVisible = true,
 }: BasicLoginLayoutProps) => {
-  const { t } = useTranslation();
-
   return (
     <Box className="BasicLoginLayout">
       <Box
@@ -37,7 +37,7 @@ const BasicLoginLayout = ({
       >
         <Box mx={0} my={2}>
           <Typography component={"p"} variant="h4">
-            {t("login")}
+            {title}
           </Typography>
         </Box>
         {children}

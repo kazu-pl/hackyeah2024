@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Formik, Form } from "formik";
-// import "./Homepage.styles.css";
+// import "./Register.styles.css";
 
 import BasicLoginLayout from "../layouts/BasicLoginLayout";
 import { useLocalizedYup } from "../common/yup/useLocalizedYup";
@@ -15,14 +15,18 @@ import Button from "../components/Button";
 import { Typography } from "@mui/material";
 
 interface LoginFormValues {
+  name: string;
   email: string;
   password: string;
+  repeatPassword: string;
   rememberMe?: boolean;
 }
 
 const initialValues: LoginFormValues = {
+  name: "",
   email: "",
   password: "",
+  repeatPassword: "",
   rememberMe: true,
 };
 
@@ -30,7 +34,7 @@ const handleRememberMe = () => {
   removeTokens();
 };
 
-const Homepage = () => {
+const Register = () => {
   const { t } = useTranslation();
   const yup = useLocalizedYup();
 
@@ -68,7 +72,7 @@ const Homepage = () => {
   };
 
   return (
-    <BasicLoginLayout title={t("login")}>
+    <BasicLoginLayout title={t("signup")}>
       <Formik
         initialValues={initialValues}
         onSubmit={handleSubmit}
@@ -131,18 +135,12 @@ const Homepage = () => {
         )}
       </Formik>
 
-      <Box
-        display={"flex"}
-        flexDirection={"column"}
-        justifyContent={"center"}
-        mt={2}
-        alignItems={"center"}
-      >
-        <Typography>{t("youDontHaveAccount")}</Typography>
-        <LowerFormLink to={PATHS_CORE.REGISTER} label={t("signup")} />
+      <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
+        <Typography>{t("alreadyHaveAnAccount")}</Typography>
+        <LowerFormLink to={PATHS_CORE.REGISTER} label={t("login")} />
       </Box>
     </BasicLoginLayout>
   );
 };
 
-export default Homepage;
+export default Register;
