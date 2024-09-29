@@ -11,6 +11,7 @@ import NotFound from "./features/NotFound";
 import Dashboard from "./features/Dashboard";
 import Register from "./features/Register";
 import Account from "./features/Account";
+import SingleTopic from "./features/SingleTopic";
 
 const Router = () => {
   useTokenListener();
@@ -30,6 +31,11 @@ const Router = () => {
       <Route
         path={PATHS_CORE.PASSWORD_FORGOT}
         element={<ForgotPassword />}
+        // exact - this no longer is needed (rr6 looks for exact matches by default)
+      />
+      <Route
+        path={PATHS_CORE.SINGLE_TOPIC("/topic/:id")}
+        element={<SingleTopic />}
         // exact - this no longer is needed (rr6 looks for exact matches by default)
       />
 
