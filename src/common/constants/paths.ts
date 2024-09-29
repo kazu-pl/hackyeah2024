@@ -5,6 +5,9 @@ export const PATHS_CORE = {
   NOT_FOUND: `/${NOT_FOUND_LINK_WITHOUT_SLASH}`,
 
   HOMEPAGE: "/",
-  PAGE2: "/page2",
-  PAGE3: "/page3",
+  REGISTER: "/register",
+  DASHBOARD: "/dashboard",
+  ACCOUNT: "/account",
+  PASSWORD_FORGOT: "/forgot-password",
+  SINGLE_TOPIC: (id: string) => `/${id}`,
 };

@@ -1,8 +1,28 @@
 {
   "welcome": "Good morning Night City",
   "onlyTranslationFile": "This text exists only in translation.json",
+  "youDontHaveAccount": "Don't have an account?",
+  "alreadyHaveAnAccount": "Already have an account?",
   "notifications": {
     "sessionEnd": "session ended"
   },
-  "login": "Login"
+  "login": "Login",
+  "signup": "Sign up",
+  "form": {
+    "emailInputLabel": "E-mail",
+    "passwordInputLabel": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password",
+    "wrongEmailMsg": "Incorrect email format",
+    "requiredFieldInputMsg": "Required field",
+    "status": "I'm a...",
+    "student": "Student",
+    "teacher": "Teacher",
+    "name": "Name"
+  },
+  "buttons": {
+    "login": "Login"
+  },
+  "accountDoesNotExist": "Account does not exist",
+  "account": "Account"
 }

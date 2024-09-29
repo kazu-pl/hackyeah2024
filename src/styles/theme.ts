@@ -16,10 +16,15 @@ const theme = createTheme({
     },
     // success: {},
     // warning: {},
-    // error: {},
+    error: {
+      light: "rgb(255, 255, 255)",
+      main: "rgb(255, 255, 255)",
+      dark: "rgb(255, 255, 255)",
+      contrastText: "rgb(255, 255, 255)",
+    },
     text: {
       primary: "rgb(235,235,235)",
-      // secondary: string;
+      secondary: "rgba(235,235,235,0.6)",
       // disabled: string;
     },
   },

@@ -1,0 +1,250 @@
+{
+    "level": 4,
+    "name": "Dynamika",
+    "topics": [
+      {
+        "topic_name": "1 zasada dynamiki",
+        "theory": {
+          "content": ["Tutaj znajduje się opis teorii dla Tematu 1"]
+        },
+        "closed_tasks": [
+          {
+            "question": "Pytanie 1 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 2 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": true},
+              {"answer": "Odpowiedź B", "is_correct": false},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 3 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 4 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 8 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 9 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 10 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          }
+        ],
+        "open_tasks": [
+          {
+            "question": "Pytanie otwarte 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed lacus sed turpis commodo tincidunt vitae non felis. Praesent tortor mauris, tempor cursus nulla et, consequat pretium tellus. Curabitur venenatis purus vitae quam viverra, venenatis bibendum odio condimentum. Vivamus luctus pharetra condimentum.",
+            "correct_answer": "Poprawna odpowiedź"
+          },
+          {
+            "question": "Pytanie otwarte 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed lacus sed turpis commodo tincidunt vitae non felis. Praesent tortor mauris, tempor cursus nulla et, consequat pretium tellus. Curabitur venenatis purus vitae quam viverra, venenatis bibendum odio condimentum. Vivamus luctus pharetra condimentum.",
+            "correct_answer": "Poprawna odpowiedź"
+          }
+        ]
+      },
+      {
+        "topic_name": "2 zasada dynamiki",
+        "theory": {
+          "content": ["Tutaj znajduje się opis teorii dla Tematu 1"]
+        },
+        "closed_tasks": [
+          {
+            "question": "Pytanie 1 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 2 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": true},
+              {"answer": "Odpowiedź B", "is_correct": false},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 3 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 4 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 8 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 9 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 10 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          }
+        ],
+        "open_tasks": [
+          {
+            "question": "Pytanie otwarte 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed lacus sed turpis commodo tincidunt vitae non felis. Praesent tortor mauris, tempor cursus nulla et, consequat pretium tellus. Curabitur venenatis purus vitae quam viverra, venenatis bibendum odio condimentum. Vivamus luctus pharetra condimentum.",
+            "correct_answer": "Poprawna odpowiedź"
+          },
+          {
+            "question": "Pytanie otwarte 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed lacus sed turpis commodo tincidunt vitae non felis. Praesent tortor mauris, tempor cursus nulla et, consequat pretium tellus. Curabitur venenatis purus vitae quam viverra, venenatis bibendum odio condimentum. Vivamus luctus pharetra condimentum.",
+            "correct_answer": "Poprawna odpowiedź"
+          }
+        ]
+      },
+      {
+        "topic_name": "3 zasada dynamiki",
+        "theory": {
+          "content": ["Tutaj znajduje się opis teorii dla Tematu 1"]
+        },
+        "closed_tasks": [
+          {
+            "question": "Pytanie 1 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 2 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": true},
+              {"answer": "Odpowiedź B", "is_correct": false},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 3 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 4 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 8 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 9 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 10 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          }
+        ],
+        "open_tasks": [
+          {
+            "question": "Pytanie otwarte 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed lacus sed turpis commodo tincidunt vitae non felis. Praesent tortor mauris, tempor cursus nulla et, consequat pretium tellus. Curabitur venenatis purus vitae quam viverra, venenatis bibendum odio condimentum. Vivamus luctus pharetra condimentum.",
+            "correct_answer": "Poprawna odpowiedź"
+          },
+          {
+            "question": "Pytanie otwarte 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed lacus sed turpis commodo tincidunt vitae non felis. Praesent tortor mauris, tempor cursus nulla et, consequat pretium tellus. Curabitur venenatis purus vitae quam viverra, venenatis bibendum odio condimentum. Vivamus luctus pharetra condimentum.",
+            "correct_answer": "Poprawna odpowiedź"
+          }
+        ]
+      }
+    ]
+  }
+  

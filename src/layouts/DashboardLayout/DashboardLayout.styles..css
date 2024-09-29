@@ -1,0 +1,24 @@
+.DashboardLayout {
+  min-height: 100vh;
+  background-image: url(../../assets/img/tlo-main.png);
+  background-size: cover;
+  background-position: bottom;
+
+  display: flex;
+
+  /* justify-content: center;
+  align-items: center; */
+
+  position: relative;
+}
+
+.DashboardLayout .MuiSvgIcon-root {
+  color: white;
+}
+
+.DashboardLayout--whiteBg {
+  background-image: url(../../assets/img/singleTopicBg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}

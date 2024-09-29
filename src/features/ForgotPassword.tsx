@@ -1,13 +1,11 @@
 import { useTranslation } from "react-i18next";
 
-// import "./Homepage.styles.css";
-
 import BasicLoginLayout from "../layouts/BasicLoginLayout";
 
 const Homepage = () => {
   const { t } = useTranslation();
 
-  return <BasicLoginLayout>asd</BasicLoginLayout>;
+  return <BasicLoginLayout title={t("form.forgotPassword")}></BasicLoginLayout>;
 };
 
 export default Homepage;
