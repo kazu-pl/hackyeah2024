@@ -4,7 +4,6 @@ import { Formik, Form } from "formik";
 
 import BasicLoginLayout from "../../layouts/BasicLoginLayout";
 import { useLocalizedYup } from "../../common/yup/useLocalizedYup";
-import { removeTokens } from "../../common/auth/tokens";
 import TextFieldFormik from "../../components/formik/TextFieldFormik";
 import Box from "@mui/material/Box";
 import CheckboxFormik from "../../components/formik/CheckboxFormik";
@@ -38,7 +37,7 @@ const Homepage = () => {
     rememberMe: yup.boolean(),
   });
 
-  const handleSubmit = async (values: LoginValues) => {
+  const handleSubmit = async () => {
     const makeFakeLogin = () =>
       new Promise((res) => {
         setTimeout(() => {

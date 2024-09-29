@@ -24,12 +24,19 @@ const AutocompleteSyncFormik = <T extends Option>({
   helperText,
   ...rest
 }: AutocompleteSyncFormikProps<T>) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [field, meta, helpers] = useField(name);
+
+  console.log({
+    field: field.value,
+  });
 
   return (
     <Autocomplete
       onChange={(event, newValue) => {
+        const eventy = event;
+        console.log({
+          eventy,
+        });
         // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         newValue ? helpers.setValue(newValue.id) : helpers.setValue("");
       }}
