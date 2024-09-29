@@ -1,7 +1,7 @@
 {
   "welcome": "Dzień dobry night city",
   "onlyTranslationFile": "ten tekst jets tylko w translation.json",
-  "youDontHaveAccount": "Nie masz jezscze konta?",
+  "youDontHaveAccount": "Nie masz jeszcze konta?",
   "alreadyHaveAnAccount": "Masz już konto?",
   "notifications": {
     "sessionEnd": "Koniec sesji. Zaloguj się ponownie"
