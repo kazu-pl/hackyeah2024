@@ -156,7 +156,7 @@ const Register = () => {
         mt={2}
       >
         <Typography>{t("alreadyHaveAnAccount")}</Typography>
-        <LowerFormLink to={PATHS_CORE.HOMEPAGE} label={t("signup")} />
+        <LowerFormLink to={PATHS_CORE.HOMEPAGE} label={t("login")} />
       </Box>
     </BasicLoginLayout>
   );
