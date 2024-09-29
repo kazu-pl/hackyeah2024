@@ -9,4 +9,5 @@ export const PATHS_CORE = {
   DASHBOARD: "/dashboard",
   ACCOUNT: "/account",
   PASSWORD_FORGOT: "/forgot-password",
+  SINGLE_TOPIC: (id: string) => `/${id}`,
 };

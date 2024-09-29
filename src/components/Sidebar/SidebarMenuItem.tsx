@@ -61,7 +61,7 @@ const SidebarMenuItem = (props: SidebarMenuItemProps) => {
       </button>
       <Collapse
         // `navigator.userAgent === "ReactSnap"` checks if react-snap is running. If so, then open tabs so they are mounted into DOM so react-snap can detect its children (Links) and create links based on that
-        in={navigator.userAgent === "ReactSnap" ? true : isSubmenuOpen}
+        in={isSubmenuOpen}
         timeout="auto"
         unmountOnExit
       >

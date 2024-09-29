@@ -14,13 +14,18 @@ import { useTranslation } from "react-i18next";
 
 export interface DashboardLayoutProps {
   children?: React.ReactNode;
+  whiteBg?: boolean;
 }
 
-const DashboardLayout = ({ children }: DashboardLayoutProps) => {
+const DashboardLayout = ({ children, whiteBg }: DashboardLayoutProps) => {
   const { t } = useTranslation();
 
   return (
-    <Box className="DashboardLayout" display={"flex"} position={"relative"}>
+    <Box
+      className={`DashboardLayout ${whiteBg ? "DashboardLayout--whiteBg" : ""}`}
+      display={"flex"}
+      position={"relative"}
+    >
       <Sidebar
         sidebarItems={[
           {
@@ -35,7 +40,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
             label: level1Json.name,
             dropdownItems: level1Json.topics.map((level) => ({
               label: level.topic_name,
-              to: `/${level.url}`,
+              to: `/topic/${level.url}`,
             })),
           },
         ]}
