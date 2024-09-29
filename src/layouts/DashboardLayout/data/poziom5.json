@@ -1,0 +1,269 @@
+{
+    "level": 5,
+    "name": "Energia",
+    "topics": [
+      {
+        "topic_name": "Energia potencjalna",
+        "theory": {
+          "content": ["Tutaj znajduje się opis teorii dla Tematu 1"]
+        },
+        "closed_tasks": [
+          {
+            "question": "Co to jest energia potencjalna?",
+            "answers": [
+              {"answer": "a) Energia ruchu", "is_correct": false},
+              {"answer": "b) Energia związana z położeniem ciała", "is_correct": true},
+              {"answer": "c) Energia związana z ciepłem", "is_correct": false},
+              {"answer": "d) Energia mechaniczna", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Energia potencjalna grawitacyjna zależy od:",
+            "answers": [
+              {"answer": "a) Maszyny, która działa na ciało", "is_correct": false},
+              {"answer": "b) Wysokości i masy ciała", "is_correct": true},
+              {"answer": "c) Prędkości ciała", "is_correct": false},
+              {"answer": "d) Siły tarcia", "is_correct": false}
+            ]
+          },
+          {
+            "question": "W którym z poniższych przypadków ciało ma największą energię potencjalną?",
+            "answers": [
+              {"answer": "a) Ciało leżące na ziemi", "is_correct": false},
+              {"answer": "b) Ciało na wysokości 5 metrów", "is_correct": false},
+              {"answer": "c) Ciało spadające z 10 metrów", "is_correct": false},
+              {"answer": "d) Ciało na wysokości 10 metrów", "is_correct": true}
+            ]
+          },
+          {
+            "question": "Pytanie 4 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 8 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 9 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 10 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          }
+        ],
+        "open_tasks": [
+          {
+            "question": "Pytanie otwarte 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed lacus sed turpis commodo tincidunt vitae non felis. Praesent tortor mauris, tempor cursus nulla et, consequat pretium tellus. Curabitur venenatis purus vitae quam viverra, venenatis bibendum odio condimentum. Vivamus luctus pharetra condimentum.",
+            "correct_answer": "Poprawna odpowiedź"
+          },
+          {
+            "question": "Pytanie otwarte 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed lacus sed turpis commodo tincidunt vitae non felis. Praesent tortor mauris, tempor cursus nulla et, consequat pretium tellus. Curabitur venenatis purus vitae quam viverra, venenatis bibendum odio condimentum. Vivamus luctus pharetra condimentum.",
+            "correct_answer": "Poprawna odpowiedź"
+          }
+        ]
+      },
+      {
+        "topic_name": "Energia kinetyczna",
+        "theory": {
+          "content": ["Tutaj znajduje się opis teorii dla Tematu 1"]
+        },
+        "closed_tasks": [
+          {
+            "question": "Co się dzieje z energią kinetyczną, gdy ciało zwalnia?",
+            "answers": [
+              {"answer": "a) Wzrasta", "is_correct": false},
+              {"answer": "b) Maleje", "is_correct": true},
+              {"answer": "c) Pozostaje stała", "is_correct": false},
+              {"answer": "d) Znika", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Co to jest energia kinetyczna?",
+            "answers": [
+              {"answer": "a) Energia związana z prędkością ciała", "is_correct": true},
+              {"answer": "b) Energia wynikająca z położenia ciała", "is_correct": false},
+              {"answer": "c) Energia powstająca w wyniku tarcia", "is_correct": false},
+              {"answer": "d) Energia służąca do ogrzewania ciała", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Jak wzrasta energia kinetyczna ciała?",
+            "answers": [
+              {"answer": "a) Proporcjonalnie do jego prędkości", "is_correct": false},
+              {"answer": "b) Proporcjonalnie do kwadratu jego masy", "is_correct": false},
+              {"answer": "c) Proporcjonalnie do kwadratu prędkości", "is_correct": true},
+              {"answer": "d) Zmniejsza się, gdy prędkość wzrasta", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 4 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 8 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 9 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Pytanie 10 z odpowiedziami zamkniętymi",
+            "answers": [
+              {"answer": "Odpowiedź A", "is_correct": false},
+              {"answer": "Odpowiedź B", "is_correct": true},
+              {"answer": "Odpowiedź C", "is_correct": false},
+              {"answer": "Odpowiedź D", "is_correct": false}
+            ]
+          }
+        ],
+        "open_tasks": [
+          {
+            "question": "Pytanie otwarte 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed lacus sed turpis commodo tincidunt vitae non felis. Praesent tortor mauris, tempor cursus nulla et, consequat pretium tellus. Curabitur venenatis purus vitae quam viverra, venenatis bibendum odio condimentum. Vivamus luctus pharetra condimentum.",
+            "correct_answer": "Poprawna odpowiedź"
+          },
+          {
+            "question": "Pytanie otwarte 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed lacus sed turpis commodo tincidunt vitae non felis. Praesent tortor mauris, tempor cursus nulla et, consequat pretium tellus. Curabitur venenatis purus vitae quam viverra, venenatis bibendum odio condimentum. Vivamus luctus pharetra condimentum.",
+            "correct_answer": "Poprawna odpowiedź"
+          }
+        ]
+      },
+      {
+        "topic_name": "Zasada zachowania energii",
+        "theory": {
+          "content": [
+            "Lemi obserwuje mango, które rośnie na drzewie.",
+            "Zauważa, że kiedy jest wysoko na gałęzi, to tak, jakby miało w sobie dużo 'energii do spadania' – takiej niewidzialnej siły, która pomaga mu spaść na ziemię. To jest energia potencjalna.",
+            "Gdy mango zaczyna spadać, Lemi obserwuje, że zaczyna nabierać prędkości. W miarę jak leci w dół, jego energia zmienia się. Zamiast 'energii do spadania' (energii potencjalnej), mango zaczyna nabierać prędkości – to jest energia ruchu (energia kinetyczna).",
+            " Tuż przed dotknięciem ziemi, mango leci najszybciej – ma wtedy najwięcej energii ruchu. Ale zaraz, co się stanie, gdy uderzy w ziemię? Czy cała energia zniknie?",
+            " Nie! Kiedy mango dotyka ziemi, jego energia się nie marnuje. Obserwujemy zmianę energii potencjalnej na kinetyczną",
+            "Co wie Lemi (jakie ma dane)?",
+            "- Mango rośnie na wysokości 3 metrów.",
+            "Co może obliczyć Lemi znając wysokość, na jakiej rośnie mango, i wykorzystując zasadę zachowania energii?",
+            "Lemi może wyliczyć prędkość, jaką będzie miało mango przy zderzeniu z ziemią!",
+            "Z jakich wzorów skorzysta Lemi?",
+            "Ep = m * g * h",
+            "Ek = m * v^2 / 2",
+            "Δ Ep = Δ Ek",
+            "m * g * h = m * v^2 / 2    | dzielimy przez m",
+            "g * h = v2 / 2                 | mnożymy razy 2",
+            "2*g*h = v2                    | pierwiastkujemy",
+            "v = √2gh                       | podstawiamy dane",
+            "v = √ 2 * 9,81 m/s2* 3m = √ 58,86 m2/s2 = 7,7 m/s"
+          ]
+        },
+        "closed_tasks": [
+          {
+            "question": "Co mówi zasada zachowania energii?",
+            "answers": [
+              {"answer": "a) Energia może powstawać i znikać", "is_correct": false},
+              {"answer": "b) Energia nie może być stworzona ani zniszczona", "is_correct": true},
+              {"answer": "c) Energia może być dowolnie tworzona", "is_correct": false},
+              {"answer": "d) Energia jest zawsze kinetyczna", "is_correct": false}
+            ]
+          },
+          {
+            "question": "W układzie zamkniętym energia całkowita:",
+            "answers": [
+              {"answer": "a) Może maleć", "is_correct": false},
+              {"answer": "b) Może rosnąć", "is_correct": false},
+              {"answer": "c) Zawsze pozostaje taka sama", "is_correct": true},
+              {"answer": "d) Zależy od temperatury", "is_correct": false}
+            ]
+          },
+          {
+            "question": "W jakiej sytuacji energia kinetyczna zamienia się w potencjalną?",
+            "answers": [
+              {"answer": "a) Podczas spadania", "is_correct": false},
+              {"answer": "b) Podczas wspinania się na górę", "is_correct": true},
+              {"answer": "c) Podczas spoczynku na ziemi", "is_correct": false},
+              {"answer": "d) Podczas biegu", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Co się dzieje z energią podczas zderzenia dwóch samochodów?",
+            "answers": [
+              {"answer": "a) Cała energia zamienia się w dźwięk", "is_correct": false},
+              {"answer": "b) Energia zamienia się w ciepło i dźwięk", "is_correct": true},
+              {"answer": "c) Energia znika", "is_correct": false},
+              {"answer": "d) Energia się podwaja", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Zgodnie z zasadą zachowania energii, energia może:",
+            "answers": [
+              {"answer": "a) Być tracona podczas procesów mechanicznych", "is_correct": false},
+              {"answer": "b) Zmieniać się z jednej formy w inną", "is_correct": true},
+              {"answer": "c) Być wytwarzana w nieskończonych ilościach", "is_correct": false},
+              {"answer": "d) Znikać podczas spalania", "is_correct": false}
+            ]
+          },
+          {
+            "question": "W jakiej sytuacji energia potencjalna zamienia się w kinetyczną?",
+            "answers": [
+              {"answer": "a) Gdy ciało spada", "is_correct": true},
+              {"answer": "b) Gdy ciało leży na ziemi", "is_correct": false},
+              {"answer": "c) Gdy ciało jest w spoczynku", "is_correct": false},
+              {"answer": "d) Gdy ciało rośnie", "is_correct": false}
+            ]
+          },
+          {
+            "question": "Podczas przekształcania energii z jednej formy w drugą",
+            "answers": [
+              {"answer": "a) Część energii może zniknąć", "is_correct": false},
+              {"answer": "b) Energia całkowita pozostaje niezmieniona", "is_correct": true},
+              {"answer": "c) Cała energia zamienia się w pracę", "is_correct": false},
+              {"answer": "d) Część energii zostaje tracona na masę", "is_correct": false}
+            ]
+          }
+        ],
+        "open_tasks": [
+          {
+            "question": "Lemur o masie 4 kg zeskakuje z gałęzi znajdującej się 5 metrów nad ziemią. Oblicz, jaką prędkość osiągnie lemur tuż przed dotknięciem ziemi, zakładając, że cała jego energia potencjalna zamienia się w energię kinetyczną. Przyjmij, że przyspieszenie grawitacyjne wynosi g=10m/s^2.",
+            "correct_answer": "10 m/s"
+          },
+          {
+            "question": "Lemur o masie 3 kg wspina się na gałąź, która znajduje się na wysokości 7 metrów nad ziemią. Oblicz energię potencjalną lemura na tej wysokości. Przyjmij, że przyspieszenie grawitacyjne wynosi g=10m/s^2",
+            "correct_answer": "210 kg*m^2/s^2"
+          }
+        ]
+      }
+    ]
+  }
+  

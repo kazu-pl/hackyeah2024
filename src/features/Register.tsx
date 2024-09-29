@@ -13,14 +13,17 @@ import { Typography } from "@mui/material";
 import AutocompleteSyncFormik from "../components/formik/AutocompleteSyncFormik";
 import { useMemo } from "react";
 
-interface FormValues {
+import { useNavigate } from "react-router-dom";
+import { saveAccound } from "../common/auth/account";
+
+export interface NewUserData {
   name: string;
   email: string;
   password: string;
   role: string;
 }
 
-const initialValues: FormValues = {
+const initialValues: NewUserData = {
   name: "",
   email: "",
   password: "",
@@ -36,6 +39,8 @@ interface UserStatusValue {
 const Register = () => {
   const { t } = useTranslation();
   const yup = useLocalizedYup();
+
+  const navigate = useNavigate();
 
   const validationSchema = yup.object({
     name: yup.string().required(),
@@ -61,18 +66,20 @@ const Register = () => {
     return values;
   }, [t]);
 
-  const handleSubmit = async (values: FormValues) => {
-    console.log({ values });
+  const handleSubmit = async (values: NewUserData) => {
     try {
       const makeFakeLogin = () =>
         new Promise((res) => {
           setTimeout(() => {
-            alert("ok");
             res("");
-          }, 2000);
+          }, 100);
         });
 
-      makeFakeLogin();
+      await makeFakeLogin();
+
+      saveAccound(values);
+
+      navigate(PATHS_CORE.HOMEPAGE);
       // await dispatch(login({ values, cancelToken: loginSource.token }));
       // if (location.state && location.state[urlFromQuery]) {
       //   navigate(location.state[urlFromQuery]); // I can't use path() here because location.state[urlFromQuery] can be from axiosInterceptor where I can't use PathWithoutLang to pass only path without lang prefix
@@ -134,15 +141,9 @@ const Register = () => {
                 isLoading={isSubmitting}
                 fullWidth
               >
-                {t("buttons.login")}
+                {t("signup")}
               </Button>
             </Box>
-            {/* <Box pt={2} display="flex" justifyContent="flex-end">
-              <LowerFormLink
-                to={PATHS_CORE.PASSWORD_FORGOT}
-                label={t("form.forgotPassword")}
-              />
-            </Box> */}
           </Form>
         )}
       </Formik>
@@ -155,7 +156,7 @@ const Register = () => {
         mt={2}
       >
         <Typography>{t("alreadyHaveAnAccount")}</Typography>
-        <LowerFormLink to={PATHS_CORE.HOMEPAGE} label={t("login")} />
+        <LowerFormLink to={PATHS_CORE.HOMEPAGE} label={t("signup")} />
       </Box>
     </BasicLoginLayout>
   );
