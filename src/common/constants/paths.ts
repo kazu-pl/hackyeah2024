@@ -6,7 +6,7 @@ export const PATHS_CORE = {
 
   HOMEPAGE: "/",
   REGISTER: "/register",
+  DASHBOARD: "/dashboard",
+  ACCOUNT: "/account",
   PASSWORD_FORGOT: "/forgot-password",
-  PAGE2: "/page2",
-  PAGE3: "/page3",
 };

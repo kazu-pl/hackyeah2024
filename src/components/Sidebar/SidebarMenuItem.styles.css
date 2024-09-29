@@ -1,0 +1,102 @@
+/* const theme = createTheme({
+  palette: {
+    primary: {
+      light: "rgb(198, 175, 233)",
+      main: "rgb(230, 0, 126)",
+      dark: "rgb(81, 0, 67)",
+      contrastText: "rgb(255, 231, 255)",
+    },
+    secondary: {
+      light: "rgb(5, 226, 232)",
+      main: "rgb(2, 188, 193)",
+      dark: "rgb(2, 114, 117)",
+      contrastText: "rgb(2, 102, 105)",
+    },
+    // success: {},
+    // warning: {},
+    // error: {},
+    text: {
+      primary: "rgb(235,235,235)",
+      secondary: "rgba(235,235,235,0.6)",
+      // disabled: string;
+    },
+  },
+}); */
+
+/* const hoverLinkStyles = css`
+  background-color: ${({ theme }) => alpha(theme.palette.primary.light, 0.1)};
+  border-radius: 8px;
+`;
+
+const activeLinkStyles = css`
+  background-color: ${({ theme }) => alpha(theme.palette.primary.light, 0.2)};
+  border-radius: 8px;
+`; */
+
+.StyledListItemButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+
+  padding: 8px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.StyledListItemButton:hover {
+  background-color: rgba(198, 175, 233, 0.1);
+  border-radius: 8px;
+}
+
+.StyledListItemIcon {
+  min-width: 40px;
+}
+
+.StyledListItemText {
+  /* color: rgb(230, 0, 126); */
+  color: rgb(230, 230, 230);
+}
+
+.StyledLink {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* color: rgb(230, 0, 126); */
+  color: rgb(230, 230, 230);
+  padding: 8px 16px 8px 8px;
+}
+
+.StyledLink.asSubmenuItem {
+  padding: 8px 16px 8px 48px;
+}
+
+.StyledLink:hover {
+  background-color: rgba(198, 175, 233, 0.1);
+  border-radius: 8px;
+}
+
+.StyledLink active {
+  background-color: rgba(198, 175, 233, 0.2);
+  border-radius: 8px;
+}
+
+.StyledDividerWrapper {
+  padding: 8px 0;
+}
+
+.StyledDividerWrapper hr {
+  border-color: #e0e0e0;
+}
+
+.StyledDivider {
+  border-color: #e0e0e0;
+}

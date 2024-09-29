@@ -2,68 +2,58 @@ import { useTranslation } from "react-i18next";
 import { Formik, Form } from "formik";
 // import "./Homepage.styles.css";
 
-import BasicLoginLayout from "../layouts/BasicLoginLayout";
-import { useLocalizedYup } from "../common/yup/useLocalizedYup";
-import { removeTokens } from "../common/auth/tokens";
-import TextFieldFormik from "../components/formik/TextFieldFormik";
+import BasicLoginLayout from "../../layouts/BasicLoginLayout";
+import { useLocalizedYup } from "../../common/yup/useLocalizedYup";
+import { removeTokens } from "../../common/auth/tokens";
+import TextFieldFormik from "../../components/formik/TextFieldFormik";
 import Box from "@mui/material/Box";
-import CheckboxFormik from "../components/formik/CheckboxFormik";
+import CheckboxFormik from "../../components/formik/CheckboxFormik";
 
-import LowerFormLink from "../components/LowerFormLink";
-import { PATHS_CORE } from "../common/constants/paths";
-import Button from "../components/Button";
+import LowerFormLink from "../../components/LowerFormLink";
+import { PATHS_CORE } from "../../common/constants/paths";
+import Button from "../../components/Button";
 import { Typography } from "@mui/material";
+import { getAccount } from "../../common/auth/account";
+import { useNavigate } from "react-router-dom";
 
-interface LoginFormValues {
+interface LoginValues {
   email: string;
   password: string;
   rememberMe?: boolean;
 }
 
-const initialValues: LoginFormValues = {
+const initialValues: LoginValues = {
   email: "",
   password: "",
   rememberMe: true,
 };
 
-const handleRememberMe = () => {
-  removeTokens();
-};
-
 const Homepage = () => {
   const { t } = useTranslation();
   const yup = useLocalizedYup();
-
+  const navigate = useNavigate();
   const validationSchema = yup.object({
     email: yup.string().email().required(),
     password: yup.string().required(),
     rememberMe: yup.boolean(),
   });
 
-  const handleSubmit = async (values: LoginFormValues) => {
-    if (!values.rememberMe) {
-      // if you login and rememberMe is false, then add listener that will remove tokens from LocalStorage when user closes the tab or the whole browser
-      window.addEventListener("unload", handleRememberMe);
-    }
+  const handleSubmit = async (values: LoginValues) => {
+    const makeFakeLogin = () =>
+      new Promise((res) => {
+        setTimeout(() => {
+          res("");
+        }, 200);
+      });
 
-    try {
-      const makeFakeLogin = () =>
-        new Promise((res) => {
-          setTimeout(() => {
-            alert("ok");
-            res("");
-          }, 2000);
-        });
+    await makeFakeLogin();
 
-      makeFakeLogin();
-      // await dispatch(login({ values, cancelToken: loginSource.token }));
-      // if (location.state && location.state[urlFromQuery]) {
-      //   navigate(location.state[urlFromQuery]); // I can't use path() here because location.state[urlFromQuery] can be from axiosInterceptor where I can't use PathWithoutLang to pass only path without lang prefix
-      // } else {
-      //   navigate(path(PATHS_DASHBOARD.DASHBOARD));
-      // }
-    } catch (err) {
-      alert(err as string);
+    const account = getAccount();
+
+    if (!account) {
+      alert(t("accountDoesNotExist"));
+    } else {
+      navigate(PATHS_CORE.DASHBOARD);
     }
   };
 
